@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./memoji.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Portfolio</title>
+    <style>
+        * {
+            user-select: none;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: .30s ease;
+        }
+
+        body {
+            background: #111;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            backdrop-filter: blur(20px);
+            padding: 1rem 0;
+            margin: 1rem 0;
+            border-radius: 10px;
+            box-shadow: 0 0 3px #111;
+            border: 1px solid #cccccc57;
+        }
+
+        li {
+            list-style: none;
+            padding: 0 1rem;
+            font-size: 13px;
+            font-weight: 500;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        a {
+            color: #bbbb;
+            letter-spacing: .6px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        a:hover {
+            color: #ffffffcb;
+        }
+
+        img {
+            z-index: 99;
+            width: 15rem;
+            height: 15rem;
+            filter: drop-shadow(0 0 20px #ccc);
+            animation: memoji 2s infinite alternate;
+        }
+
+        @keyframes memoji {
+            0% {
+                filter: drop-shadow(0 0 80px #111);
+            }
+
+            50% {
+                filter: drop-shadow(0 0 60px #bbb);
+            }
+
+            100% {
+                filter: drop-shadow(0 0 40px #ccc);
+            }
+        }
+
+        main p {
+            color: #888;
+            margin-top: -2rem;
+            background: rgba(0, 0, 0, .3);
+            padding: 1rem;
+            border: 2px solid #222;
+            border-radius: 14px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 30px #111;
+        }
+
+        footer {
+            color: #555;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer .linkgrp {
+            border: 2px solid #333;
+            border-radius: 50px;
+            padding: .6rem;
+            width: fit-content;
+        }
+
+        footer .links h2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: texth2 1.50s infinite alternate ease;
+        }
+
+        @keyframes texth2 {
+            50% {
+                color: #333;
+            }
+
+            100% {
+                color: #ccc;
+            }
+        }
+
+        footer .links a {
+            padding: .6rem;
+        }
+
+        footer .links a i {
+            font-size: 1.2rem;
+        }
+
+        footer .links a i:hover {
+            color: #ffffffcb;
+            text-shadow: 0 0 20px #ffffffcb;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <nav>
+                <li><a href="https://drive.google.com/file/d/1Y1p7SzLaWuLbAaKigkKI-19k3TYuhDCy/view"
+                        target="_blank">Resume</a></li>
+                <li><a href="https://github.com/su6o?tab=repositories" target="_blank">Projects</a></li>
+                <li><a href="mailto:su6o0day@gmail.com">Contact</a></li>
+            </nav>
+            <main>
+                <center><img src="memoji.png" class="img"></center>
+                <center>
+                    <h1 style="color: #ccc; cursor: pointer;">#whoami</h1>
+                </center>
+                <br><br>
+                <p>
+                    👋 Hey there, I’m <b>Deepanshu Chauhan</b>, a <b>self-taught hacker</b> with a deep passion for
+                    cybersecurity. My journey began
+                    back in class 7th when I first discovered penetration testing, and from that moment, I was hooked.
+                    Everything I know today, I’ve learned on my own, using the vast resources available on the internet.
+                    This self-driven approach has made me not only passionate but also a hardworking and smart worker,
+                    always eager to discover and master new skills.
+                </p>
+                <br><br>
+                <p>
+                    🏫 Currently, I’m pursuing a <b>Bachelor of Computer Applications (BCA)</b>, which complements the
+                    practical
+                    knowledge I’ve gained through years of self-study and hands-on experience. I’ve spent countless
+                    hours on platforms like TryHackMe, PortSwigger, and HackTheBox, where I’ve tackled real-world
+                    challenges that push me to think critically and evolve my skills. <b>Capture The Flag (CTF)</b>
+                    competitions are a particular favorite of mine—they’re the perfect way to put my knowledge to the
+                    test in dynamic, competitive environments.
+                </p>
+                <br><br>
+                <p>
+                    ❤️ My true love within cybersecurity is <b>penetration testing</b>. There’s something incredibly
+                    satisfying
+                    about finding and exploiting vulnerabilities in systems, then using that knowledge to make them
+                    stronger. I’ve become proficient with a range of tools, including Nmap, Burp Suite, and Metasploit,
+                    but I’m always looking to learn more and stay ahead of the curve.
+                </p>
+                <br><br>
+                <p>
+                    🤝 In addition to my technical skills, I’m passionate about <b>connecting</b> with others in the
+                    <b>cybersecurity
+                        community</b>. I believe in the power of <b>collaboration and knowledge-sharing</b>, and I’m
+                    always
+                    eager to
+                    engage with like-minded individuals. Whether it’s through online forums, social media, or in-person
+                    meetups, I’m constantly looking to build connections that can help me grow and contribute to the
+                    field.
+                </p>
+                <br><br>
+                <p>
+                    🚀 <b>As I look ahead</b>, I’m excited to continue my journey in cybersecurity. I’m committed to
+                    lifelong
+                    learning and always seeking out new challenges that will push me to grow. My ultimate goal is to
+                    make a meaningful impact on the field of cybersecurity—not just by advancing my own career, but by
+                    helping to create safer digital environments for everyone.
+                </p>
+            </main>
+            <br><br><br>
+            <footer>
+                <center>
+                    <div class="links">
+                        <h2>Connect With Me</h2>
+                        <div class="linkgrp">
+                            <a href="https://instagram.com/su6osu" target="_blank"><i class="ri-instagram-fill"></i></a>
+                            <a href="https://x.com/su6osu" target="_blank"><i class="ri-twitter-x-line"></i></a>
+                            <a href="https://linkedin.com/in/su6o" target="_blank"><i
+                                    class="ri-linkedin-box-fill"></i></a>
+                            <a href="https://t.me/su6oin" target="_blank"><i class="ri-telegram-2-fill"></i></a>
+                            <a href="https://github.com/su6o" target="_blank"><i class="ri-github-fill"></i></a>
+                        </div>
+                        <br><br>
+                        <p id="ipAddress"><i class="ri-fingerprint-2-fill"></i>&nbsp;</p>
+                    </div>
+                </center>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.getJSON("https://api.ipify.org?format=json", async function (data) {
+                const res = JSON.stringify(data);
+                const ip = JSON.parse(res).ip;
+                $("#ipAddress").append("Your IPv4 : " + ip);
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
